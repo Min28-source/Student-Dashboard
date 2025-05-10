@@ -10,7 +10,7 @@ import Add from "./Pages/Add.jsx";
 import Signup from "./Pages/Signup.jsx";
 import Login from "./Pages/Login.jsx";
 import Loggedin from "./Components/Loggedin.jsx";
-import Details from "./Pages/details.jsx";
+import Details from "./Pages/Details.jsx";
 import ProtectedRoute from "./Components/ProtectedRoute.jsx";
 
 const router = createBrowserRouter([
