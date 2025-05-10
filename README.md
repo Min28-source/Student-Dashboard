@@ -22,34 +22,6 @@ A React-based dashboard for managing a list of students. This application allows
 
 ---
 
-## 📁 Project Structure
-
-student-dashboard/
-├── src/
-│ ├── components/
-│ │ ├── Loggedin.jsx
-│ │ ├── Navbar.jsx
-│ │ ├── ProtectedRoute.jsx
-| | ├── SearchBar.jsx
-│ ├── Contexts/
-│ │ ├── toastContext.js
-│ ├── firebase/
-| | ├── initialization.js
-│ ├── Pages/
-| | ├── Add.jsx
-| | ├── Dashboard.jsx
-| | ├── Details.jsx
-| | ├── errorPage.jsx
-| | ├── Login.jsx
-| | ├── Signup.jsx
-│ ├── App.jsx
-│ ├── main.jsx
-│ ├── Data.js
-| ├── .env
-├── package.json
-└── README.md
-
----
 
 ## 🔐 Firebase Setup
 
