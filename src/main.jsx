@@ -10,6 +10,7 @@ import Add from "./Pages/Add.jsx";
 import Signup from "./Pages/Signup.jsx";
 import Login from "./Pages/Login.jsx";
 import Loggedin from "./Components/Loggedin.jsx";
+import Details from "./Pages/details.jsx";
 import ProtectedRoute from "./Components/ProtectedRoute.jsx";
 
 const router = createBrowserRouter([
@@ -46,6 +47,14 @@ const router = createBrowserRouter([
          </Loggedin>
         ),
       },
+      {
+        path: "/student/:rollNo",
+        element: (
+          <ProtectedRoute>
+           <Details/>
+          </ProtectedRoute>
+        )
+      }
     ],
   },
 ]);

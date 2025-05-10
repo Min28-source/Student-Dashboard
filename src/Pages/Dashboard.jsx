@@ -8,8 +8,10 @@ import students from "../Data";
 import { Autocomplete, Typography, TextField } from "@mui/material";
 import { useState, useEffect } from "react";
 import SearchBar from "../Components/SearchBar";
+import { useNavigate } from "react-router-dom";
 
 export default function Dashboard() {
+  const navigate = useNavigate()
   const [search, setSearch] = useState("");
   const [course, setCourse] = useState("");
 
@@ -79,10 +81,12 @@ export default function Dashboard() {
             </Box>
           )}
           {search ? (
-            filtered.map((student, index) => (
+            filtered.map((student) => (
               <Card
-                key={index}
+                key={student.rollNo}
+                onClick={() => navigate(`/student/${student.rollNo}`)}
                 sx={{
+                  cursor: 'pointer',
                   mb: 2,
                   mt: 2,
                   width: "97%",
@@ -93,7 +97,6 @@ export default function Dashboard() {
                   marginRight: "auto",
                   "&:hover": {
                     transform: "scale(1.01)",
-                    // boxShadow: 6,
                   },
                 }}
               >
@@ -125,10 +128,12 @@ export default function Dashboard() {
               </Typography>
             </Box>
               {studentData ? (
-                studentData.map((student, index) => (
+                studentData.map((student) => (
                   <Card
-                    key={index}
+                    key={student.rollNo}
+                    onClick={() => navigate(`/student/${student.rollNo}`)}
                     sx={{
+                      cursor: 'pointer',
                       mb: 2,
                       mt: 2,
                       width: { xs: "90%", sm: "95%", md: "97%", lg: "97%" },
