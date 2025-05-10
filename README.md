@@ -2,6 +2,9 @@
 
 A React-based dashboard for managing a list of students. This application allows you to view, add, and filter students, with authentication powered by Firebase. Student data is fetched from a simulated API.
 
+# Deployment
+Deployed [here](https://student-dashboard-dusky-xi.vercel.app/)
+
 ## 🚀 Features
 
 - 🔒 **Login with Firebase Authentication**
