@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyB5vXxoX6TNxzkQ_641Biz0FXwoEEXq_WM",
-  authDomain: "playground-69817.firebaseapp.com",
-  databaseURL: "https://playground-69817-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "playground-69817",
-  storageBucket: "playground-69817.firebasestorage.app",
-  messagingSenderId: "118617709553",
-  appId: "1:118617709553:web:3a292a49729c1ed2780250"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  databaseURL: import.meta.env.VITE_FIREBASE_DATABASE_URL,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
