@@ -21,7 +21,6 @@ Deployed [here](https://student-dashboard-dusky-xi.vercel.app/)
 - **Firebase Auth**
 - **Axios + Axios Mock Adapter**
 - **React Router DOM**
-- **Tailwind CSS** (or plain CSS - depending on your preference)
 
 ---
 
